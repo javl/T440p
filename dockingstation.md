@@ -46,4 +46,4 @@ Now to make both files executable:
 chmod +x ~/thinkpad-docking.sh ~/thinkpad-undock.sh
 ```
 
-Of course you can combine the fles and make them do more fancy stuff, but this is all I needed.
+Of course you can combine the two files into one and make them do more fancy stuff, but this is all I needed.
