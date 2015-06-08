@@ -14,7 +14,7 @@
     m:0x0 + c:122
     XF86AudioLowerVolume 
 
-#Lock-Copy
+#Lock computer and disable screen
 "slock & xset dpms force off"
     m:0x0 + c:235
     XF86Display 
@@ -29,12 +29,12 @@
     m:0x0 + c:232
     XF86MonBrightnessDown 
 
-#Wicd
+#Open Wicd
 "wicd-client"
     m:0x0 + c:179
     XF86Tools 
 
-#Toggle Mute Apple Keyboard
+#Toggle Mute on Apple Keyboard
 "amixer -D pulse set Master toggle"
     m:0x10 + c:121
     Mod2 + XF86AudioMute 
