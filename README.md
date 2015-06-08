@@ -9,5 +9,5 @@ replace this with your own user name to have them point to the right files.
 Currently in this repo:
 * [Automatically running xrandr when (un)docking](https://github.com/javl/T440p/blob/master/dockingstation.md)
 * [Setting up keyboard shortcuts using xbindkeys](https://github.com/javl/T440p/blob/master/xbindkeys.md)
-* [Tint2 menu bar setup](https://github.com/javl/T440p/blob/master/tint2rc)
+* [Tint2 menu bar setup](https://github.com/javl/T440p/blob/master/tint2.md)
 * [My .xinitrc file](https://github.com/javl/T440p/blob/master/.xinitrc)
