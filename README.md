@@ -5,4 +5,4 @@ Debian Jessie to work properly on my Lenovo Thinkpad T440p.
 
 Currently in this repo:
 * [Automatically running xrandr when (un)docking](https://github.com/javl/T440p/blob/master/dockingstation.md)
-* [Setting up keyboard shortcuts using xbindkeys](https://github.com/javl/T440p/blob/master/xbindkeysrc.md)
+* [Setting up keyboard shortcuts using xbindkeys](https://github.com/javl/T440p/blob/master/xbindkeys.md)
