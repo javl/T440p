@@ -1,4 +1,4 @@
-#Keyboard shortcuts for T440p#
+##Keyboard shortcuts for T440p using xbindkeys##
 I've added a couple of keyboard shortcuts to control sound and quickly lock my
 computer for when I'm leaving.
 
