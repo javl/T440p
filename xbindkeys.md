@@ -1,11 +1,9 @@
-##Keyboard shortcuts for T440p using xbindkeys##
-I've added a couple of keyboard shortcuts to control sound and quickly lock my
-computer for when I'm leaving.
+##Keyboard shortcuts for T440p using ```xbindkeys```##
+I've added a couple of keyboard shortcuts to control sound and quickly lock my computer.
 
-Install ```xbindkeys``` and alternatively ```xbindkeys-config``` to easily set
-more shortcuts / find the keyboard codes needed.
-
+Install ```xbindkeys``` and alternatively ```xbindkeys-config```. The config
+program can be used to easily set more shortcuts or find the keycodes needed.
 
 ```sudo apt-get install xbindkeys xbindkeys-config```
-Save the [xbindkeysrc](https://github.com/javl/T440p/blob/master/xbindkeysrc) file to
-```~/.xbindkeysrc```. Note the dot at the beginning of the filename.
+
+Shortcuts settings are saved to ```~/.xbindkeysrc```. You can find my [.xbindkeysrc file here](https://github.com/javl/T440p/blob/master/.xbindkeysrc).
