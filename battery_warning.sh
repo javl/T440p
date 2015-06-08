@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This file needs a couple of permissions to be set beforehand.
+# Those can be found in the .xinitrc file
+
 clear
 # Start blinking the power button light. Useful for spotting an
 # empty battery from a distance
