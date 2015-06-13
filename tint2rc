@@ -114,7 +114,7 @@ mouse_scroll_down = iconify
 
 # Battery
 battery = 1
-battery_low_status = 5
+battery_low_status = 6
 battery_low_cmd = xterm ~/battery_warning.sh
 battery_hide = never
 bat1_font = sans 8
