@@ -7,7 +7,8 @@ In all these scripts I've changed my username with $USER. You will need to
 replace this with your own user name to have them point to the right places.
 
 Currently in this repo:
-* [Automatically running xrandr when (un)docking](https://github.com/javl/T440p/blob/master/dockingstation.md)
-* [Setting up keyboard shortcuts using xbindkeys](https://github.com/javl/T440p/blob/master/xbindkeys.md)
-* [Tint2 menu bar setup](https://github.com/javl/T440p/blob/master/tint2.md)
-* [My .xinitrc file](https://github.com/javl/T440p/blob/master/.xinitrc)
+* [Automatically running xrandr when (un)docking](https://github.com/javl/T440p/dockingstation.md)
+* [Setting up keyboard shortcuts using xbindkeys](https://github.com/javl/T440p/xbindkeys.md)
+* [Tint2 menu bar setup](https://github.com/javl/T440p/tint2.md)
+* [My .xinitrc file](https://github.com/javl/T440p/.xinitrc)
+* [Openbox keyboard shortcuts](https://github.com/javl/T440p/openbox_settings.md)
