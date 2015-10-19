@@ -7,3 +7,8 @@ options snd slots=snd_hda_intel, thinkpad_acpi
 options snd_hda_intel index=0
 options thinkpad_acpi index=1
 ```
+
+###settings###
+To get some more control over audio settings, install ```pavucontrol```
+
+To show live volume meter: ```pavumeter```
