@@ -4,19 +4,19 @@ I'm using one of Lenovo's Ultra Docks, hooked up to an external monitor using th
 
 To make Debian expand the desktop to the second screen when docking and reset it to only the laptop's screen on undocking I'm using the following:
 
-Replace $USER with your username
+Replace javl with your username
 
 ```
 #/etc/acpi/events/thinkpad-docking
 event=ibm/hotkey LEN0068:00 00000080 00004010
-action=su $USER -c '/home/$USER/thinkpad-docking.sh'
+action=su javl -c '/home/javl/thinkpad-docking.sh'
 ```
 
 
 ```
 #/etc/acpi/events/thinkpad-undock
 event=ibm/hotkey LEN0068:00 00000080 00004011
-action=su $USER -c '/home/$USER/thinkpad-undock.sh'
+action=su javl -c '/home/javl/thinkpad-undock.sh'
 ```
 
 Reload ```acpid``` to enable the new events:
@@ -27,17 +27,17 @@ Now add the two scripts to run. The ```DISPLAY``` and ```XAUTHORITY``` variables
 On Other devices the screen device names might be different. You can check this using: ```xrandr -q``` to get a list of all attached devices. On the ```T440p```, the internal display is called ```eDP1``` and ```DP2``` is the ```DVI``` output of the dock.
 
 ```
-#/home/$USER/thinkpad-docking.sh
+#/home/javl/thinkpad-docking.sh
 #!/bin/sh
 export DISPLAY=:0
-export XAUTHORITY=/home/$USER/.Xauthority
+export XAUTHORITY=/home/javl/.Xauthority
 xrandr --output DP2 --mode 1920x1200 --right-of eDP1
 ```
 
 ```
-#/home/$USER/thinkpad-undock.sh
+#/home/javl/thinkpad-undock.sh
 export DISPLAY=:0
-export XAUTHORITY=/home/$USER/.Xauthority
+export XAUTHORITY=/home/javl/.Xauthority
 xrandr --auto
 ```
 

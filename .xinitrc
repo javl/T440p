@@ -1,7 +1,7 @@
 # Set permissions for LED (used for low-power message
 # See the battery_warning.sh file on Github
-chown $USER:root /sys/devices/platform/thinkpad_acpi/leds/tpacpi::power/brightness
-chown $USER:root /proc/acpi/ibm/led
+chown javl:root /sys/devices/platform/thinkpad_acpi/leds/tpacpi::power/brightness
+chown javl:root /proc/acpi/ibm/led
 
 # Start Synapse daemon
 synapse -s &
