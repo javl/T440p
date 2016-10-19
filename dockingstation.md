@@ -24,14 +24,15 @@ Reload ```acpid``` to enable the new events:
 
 Now add the two scripts to run. The ```DISPLAY``` and ```XAUTHORITY``` variables are needed to point ```xrandr``` to the right display (without them I had the problem that it was trying to set a display for the root user instead).
 
-On Other devices the screen device names might be different. You can check this using: ```xrandr -q``` to get a list of all attached devices. On the ```T440p```, the internal display is called ```eDP1``` and ```DP2``` is the ```DVI``` output of the dock.
+On Other devices the screen device names might be different. You can check this using: ```xrandr -q``` to get a list of all attached devices. On the ```T440p```, the internal display is called ```eDP1``` and ```DP2``` is the ```DVI``` output of the dock. For some reason the keyboard speed sometimes changes when docking, so I added a line to fix this to the file as well.
 
 ```
-#/home/javl/thinkpad-docking.sh
 #!/bin/sh
 export DISPLAY=:0
 export XAUTHORITY=/home/javl/.Xauthority
-xrandr --output DP2 --mode 1920x1200 --right-of eDP1
+xrandr --output DP2 --primary --mode 1920x1200 --output eDP1 --mode 1600x900 --left-of DP2
+# Set the key repeat speed again for the desktop keyboard
+xset r rate 300 50
 ```
 
 ```
