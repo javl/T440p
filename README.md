@@ -10,8 +10,9 @@ Currently in this repo:
 * [Fixing immidiate wakeup after sleep problem](https://github.com/javl/T440p/blob/master/wakeup-problem.md)
 * [Setting up keyboard shortcuts using xbindkeys](https://github.com/javl/T440p/blob/master/xbindkeys.md)
 * [Tint2 menu bar setup](https://github.com/javl/T440p/blob/master/tint2.md)
-* [Setup audio and airplay](https://github.com/javl/T440p/blob/master/audio.md)
+* [Set up audio and airplay](https://github.com/javl/T440p/blob/master/audio.md)
 * [My .xinitrc file](https://github.com/javl/T440p/blob/master/.xinitrc)
 * [Openbox keyboard shortcuts](https://github.com/javl/T440p/blob/master/openbox_settings.md)
 * [Skippy-xd visual application switcher](https://github.com/javl/T440p/blob/master/skippy-xd.md)
+* [Set up a proper locale for Icedove](https://github.com/javl/T440p/blob/master/icedove.md)
 
