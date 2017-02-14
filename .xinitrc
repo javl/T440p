@@ -1,3 +1,4 @@
+#/home/javl/.xinitrc
 # Set permissions for LED (used for low-power message
 # See the battery_warning.sh file on Github
 chown javl:root /sys/devices/platform/thinkpad_acpi/leds/tpacpi::power/brightness
@@ -24,5 +25,5 @@ synclient TapButton1=1 &
 #This doesn't work? Need to check why
 synclient VertTwoFingerScroll=1 &
 
-# Start openbox
+# Start openbox. This line is mandatory
 exec openbox
