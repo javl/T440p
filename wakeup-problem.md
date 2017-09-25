@@ -1,4 +1,5 @@
-#Wakeup problem fix#
+### Wakeup problem fix ###
+
 Sometimes after I close the lid and the laptop goes to sleep, it will wake up
 straight away while still being closed. Especially anoying when it is in your
 bag as it can run hot (and will deplete your battery).
