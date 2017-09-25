@@ -1,4 +1,4 @@
-#Icedove#
+### Icedove ###
 To have Icedove use European dates and clock (24-hours instead of AM/PM), set the locale to en_DK.utf8
 
 For some reason, this locale seems to work best.
