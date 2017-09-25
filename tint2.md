@@ -1,4 +1,4 @@
-#Tint2 setup#
+### Tint2 setup ###
 I'm using the tint2 menu bar. Simply install it using
 ```sudo apt-get install tint2```
 
