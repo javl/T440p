@@ -1,4 +1,4 @@
-#Openbox Settings#
+### Openbox Settings ###
 Settings for Openbox (such as keyboard shortcuts) can 
 be found [here](https://github.com/javl/T440p/blob/master/rc.xml). One of the
 keyboard shortcuts I really like is the ```windows + up``` to maximize

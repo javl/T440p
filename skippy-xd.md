@@ -1,4 +1,4 @@
-#Skippy-xd Settings#
+### Skippy-xd Settings ###
 
 To easily switch between application, I've installed ```skippy-xd```, which works a lot like ```expose``` on OSX, showing previews of all the applications that are currently running.
 

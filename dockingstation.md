@@ -1,4 +1,4 @@
-#Lenovo Thinkpad Ultra Dock
+### Lenovo Thinkpad Ultra Dock ###
 
 I'm using one of Lenovo's Ultra Docks, hooked up to an external monitor using the ```DVI``` output.
 

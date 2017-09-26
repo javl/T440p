@@ -1,4 +1,4 @@
-#Mouse scroll speed#
+### Mouse scroll speed ###
 
 Install `imwheel`: `sudo apt-get install imwheel`
 
