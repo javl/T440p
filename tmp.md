@@ -11,4 +11,16 @@ Temporary file to store changes that don't have their own file (yet) / need to b
     Driver      "intel"
     Option      "Backlight"  "intel_backlight"
     EndSection
+
+```sudo nano /etc/default grub```
+
+add ```acpi_backlight=vendor``` to ```GRUB_CMDLINE_LINUX_DEFAULT```
+
+```sudo update-grub```
     
+##### Disabling renaming of wireless interface (from wlp3s0 back to wlan0) #####
+```sudo nano /etc/default/grub```
+
+add ```net.ifnames=0``` to ```GRUB_CMDLINE_LINUX_DEFAULT```
+
+```sudo update-grub```
