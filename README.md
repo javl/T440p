@@ -15,4 +15,5 @@ The following index is not complete, so you might want to browse the repo itself
 * [Openbox keyboard shortcuts](https://github.com/javl/T440p/blob/master/openbox_settings.md)
 * [Skippy-xd visual application switcher](https://github.com/javl/T440p/blob/master/skippy-xd.md)
 * [Set up a proper locale for Icedove](https://github.com/javl/T440p/blob/master/icedove.md)
+* [Automatically reconnect to wifi on resume](https://github.com/javl/T440p/blob/master/reconnect_wifi.md)
 
