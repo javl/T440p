@@ -1,4 +1,5 @@
 #!/bin/bash
+# /lib/systemd/system-sleep/99_reconnect_wifi
 if [ "${1}" == "pre" ]; then
     # /usr/bin/espeak bye bye # bonus option on suspend
 elif [ "${1}" == "post" ]; then
