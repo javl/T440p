@@ -15,3 +15,7 @@ Then, create a wrapper for Icedove that sets this locale by creating ```/usr/loc
     export LC_ALL
     /usr/bin/icedove $@
 
+
+update:
+A nicer way might be to just set the time locale to a different default in ```.xinitrc```:
+```localectl set-locale LC_TIME=nl_NL.UTF-8```
