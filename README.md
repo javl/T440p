@@ -1,9 +1,11 @@
 # Lenovo Thinkpad T440p Setup
 
 In this repo I'll be keeping track of the scripts / methods I've used to get
-Debian Jessie to work properly on my Lenovo Thinkpad T440p.
+Debian (currently Buster) to work properly on my Lenovo Thinkpad T440p.
 
-My username is javl, so you will need to replace this with user name to have them point to the right places.
+This repo is primaraly meant for myself, so things might be outdated, weird or broken.
+
+My username is javl, so you will need to replace this with your user name to have them point to the right places.
 
 The following index is not complete, so you might want to browse the repo itself.
 * [Automatically running xrandr when (un)docking](https://github.com/javl/T440p/blob/master/dockingstation.md)
