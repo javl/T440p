@@ -3,66 +3,92 @@
 ###########################
 #
 # Version: 0.1.3
+#
+# If you edit this, do not forget to uncomment any lines that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# A list of keys is in /usr/include/X11/keysym.h and in
+# /usr/include/X11/keysymdef.h 
+# The XK_ is not needed. 
+#
+# List of modifier (on my keyboard): 
+#   Control, Shift, Mod1 (Alt), Mod2 (NumLock), 
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll). 
+#
+# Another way to specifie a key is to use 'xev' and set the 
+# keycode with c:nnn or the modifier with m:nnn where nnn is 
+# the keycode or the state returned by xev 
+#
+# This file is created by xbindkey_config 
+# The structure is : 
+# # Remark 
+# "command" 
+# m:xxx + c:xxx 
+# Shift+... 
 
-#Volume Up
-"amixer sset Master  5000+ unmute"
-    m:0x0 + c:123
-    XF86AudioRaiseVolume
+
+
+
+#keystate_numlock = enable
+#keystate_scrolllock = enable
+#keystate_capslock = enable
+
+
+
+#Volume Mute
+"/home/javl/scripts/update_volume.sh mute"
+    m:0x0 + c:121
+    XF86AudioMute 
 
 #Volume Down
-"amixer sset Master 5000- unmute"
+"/home/javl/scripts/update_volume.sh -10%"
     m:0x0 + c:122
-    XF86AudioLowerVolume
+    XF86AudioLowerVolume 
 
-#Lock
+#Volume Up
+"/home/javl/scripts/update_volume.sh +10%"
+    m:0x0 + c:123
+    XF86AudioRaiseVolume 
+
+#Lock Display
 "slock & xset dpms force off"
     m:0x0 + c:235
-    XF86Display
+    XF86Display 
 
-#Increase Brightness
-"xbacklight -inc 10%"
-    m:0x0 + c:233
-    XF86MonBrightnessUp
-
-#Decrease Brightness
-"xbacklight -dec 10%"
+#Change Brightness
+"/usr/local/bin/backlight"
     m:0x0 + c:232
-    XF86MonBrightnessDown
+    XF86MonBrightnessDown 
 
-#Wicd
+#Open Wicd client
 "wicd-client"
+    m:0x0 + c:246
+    XF86WLAN 
+
+#Spotify Previous Track
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+    m:0x0 + c:225
+    XF86Search 
+
+#Spotify Play/Pause
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
     m:0x0 + c:179
-    XF86Tools
+    XF86Tools 
 
-#Toggle Mute Apple Keyboard
-"amixer -D pulse set Master toggle"
-    m:0x10 + c:121
-    Mod2 + XF86AudioMute
-
-#Rotate display
-"/home/javl/thinkpad-rotate.sh"
+#Spotify Next Track
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
     m:0x0 + c:128
-    XF86LaunchA
+    XF86LaunchA 
 
-#Qcalculate
-"qalculate"
-    m:0x10 + c:148
-    Mod2 + XF86Calculator
+#Keepass autotype
+"/usr/bin/keepass2 --auto-type"
+    m:0x0 + c:152
+    XF86Explorer 
 
-#play/pause
-"python /opt/spotify-notify/spotify-notify.py -a playPause -n"
-    m:0x10 + c:172
-    Mod2 + XF86AudioPlay
-
-#Next
-"python /opt/spotify-notify/spotify-notify.py -a next -n"
-    m:0x10 + c:127
-    Mod2 + Pause
-
-#skippy-xd
-"/home/javl/skippy_toggle.sh"
+#Keepass autotype-keyboard
+"/usr/bin/keepass2 --auto-type"
     m:0x0 + c:78
-    Scroll_Lock
+    Scroll_Lock 
 
 #
 # End of xbindkeys configuration
