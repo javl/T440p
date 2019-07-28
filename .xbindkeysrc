@@ -36,27 +36,27 @@
 
 
 #Volume Mute
-"/home/javl/scripts/update_volume.sh mute"
+"/home/javl/projects/T440p/scripts/update_volume.sh mute"
     m:0x0 + c:121
     XF86AudioMute 
 
 #Volume Down
-"/home/javl/scripts/update_volume.sh -10%"
+"/home/javl/projects/T440p/scripts/update_volume.sh -10%"
     m:0x0 + c:122
     XF86AudioLowerVolume 
 
 #Volume Up
-"/home/javl/scripts/update_volume.sh +10%"
+"/home/javl/projects/T440p/scripts/update_volume.sh +10%"
     m:0x0 + c:123
     XF86AudioRaiseVolume 
 
 #Lock Display
 "slock & xset dpms force off"
-    m:0x0 + c:235
-    XF86Display 
+    m:0x0 + c:233
+    XF86MonBrightnessUp 
 
 #Change Brightness
-"/usr/local/bin/backlight"
+"/home/javl/projects/T440p/scripts/backlight.sh"
     m:0x0 + c:232
     XF86MonBrightnessDown 
 
